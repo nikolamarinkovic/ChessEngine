@@ -7,6 +7,11 @@ How to start application
 5. go back to root
 6. "py ChessEngine.py"
 
+Options:
+  '-w' - white player is gonna be the chess AI 
+  '-b' - black player is gonna be the chess AI
+  (can put both -w and -b options)
+
 Preko komandne linije pozicionirati se u folder /venv/scripts
 ukucati komandu "activate.bat"
 vratiti se nazad u koreni direktorijum
