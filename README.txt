@@ -11,8 +11,3 @@ Options:
   '-w' - white player is gonna be the chess AI 
   '-b' - black player is gonna be the chess AI
   (can put both -w and -b options)
-
-Preko komandne linije pozicionirati se u folder /venv/scripts
-ukucati komandu "activate.bat"
-vratiti se nazad u koreni direktorijum
-ukucati "py ChessEngine.py"
