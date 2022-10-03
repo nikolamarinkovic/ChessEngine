@@ -1,3 +1,5 @@
+import sys
+
 import pygame as p
 from Board import Board
 from ChessAi import ChessAi
@@ -47,8 +49,8 @@ def main():
     squareSelected = ()  # at start, no square selected
     playerClicks = []  # list of squares
 
-    playerOne = False # true if white player is human
-    playerTwo = False # true if black player is human
+    playerOne = True # true if white player is human
+    playerTwo = True # true if black player is human
 
     aiDepth = 3
     aiThinking = False # true if ai is still thinking
@@ -59,6 +61,13 @@ def main():
     chessAiWhite = ChessAi(aiDepth, board)  # add your chess engine here for white
     chessAiBlack = ChessAi(aiDepth, board)  # add your chess engine here for black
 
+    numOfArgs = len(sys.argv)
+    for i in range(1, numOfArgs):
+        argument = sys.argv[i]
+        if argument == '-b':
+            playerTwo = False
+        elif argument == '-w':
+            playerOne = False
 
     #moveLogFont = p.font.SysFont("Arial", 12, False, False)
 
